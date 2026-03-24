@@ -3,26 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>自治体・公共施設向けベビーベッド導入 | 株式会社ヤマサキ</title>
+    <title>自治体・公共施設向けベビーベッド導入 | 株式会社 山崎</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@600&display=swap" rel="stylesheet">
 </head>
-<script>
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('show');
-            }
-        });
-    });
-
-    // 「fade-in」というクラスがついた要素を監視
-    const fadeElements = document.querySelectorAll('.fade-in');
-    fadeElements.forEach((el) => observer.observe(el));
-</script>
-
-
-    
 <body>
 
     <header class="header">
@@ -35,15 +19,15 @@
     </header>
 
     <main>
-        <section class="mv">
+        <section class="mv fade-in">
             <div class="container mv-content">
                 <div class="mv-text">
                     <p class="sub-copy">自治体・公共施設向け</p>
-                    <h2 class="main-copy">ベビーベッド/おむつ交換台の導入<br><span>仕様・設置のご相談まで一括対応</span></h2>
-                    <p class="description">メーカーとして、木材製造から管理。設置場所に合わせた最適なご提案とサポートをご用意します。</p>
+                    <h2 class="main-copy">ベビーベッド/おむつ交換台の導入</h2>
+                    <p class="description">仕様の検討から設置相談まで一括対応しています。</p>
+                    <p class="description-sub">メーカーとして、木材製造から管理。設置場所に合わせた最適なご提案とサポートをご用意します。</p>
                     <div class="mv-btns">
-                        <a href="#contact" class="btn btn-primary">お問い合わせ・見積依頼</a>
-                        <a href="#" class="btn btn-outline">仕様書ダウンロード</a>
+                        <a href="#contact" class="btn btn-primary">お問い合わせ</a>
                     </div>
                 </div>
                 <div class="mv-image">
@@ -52,88 +36,73 @@
             </div>
         </section>
 
-        <section class="reason section-padding">
+        <section class="products section-padding fade-in">
+            <div class="container">
+                <h2 class="section-title">製品ラインナップ(公共施設向け)</h2>
+                <div class="grid grid-3">
+                    <div class="product-item">
+                        <img src="https://via.placeholder.com/400x300?text=G-006" alt="G-006">
+                        <div class="product-info">
+                            <span class="tag">NEW</span>
+                            <h3>ハイタイプベッドハイクラウン(立ち ヤマサキ G-006)</h3>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="https://via.placeholder.com/400x300?text=G-008" alt="G-008">
+                        <div class="product-info">
+                            <h3>おむつ交換台スタンドタイプ G-008</h3>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="https://via.placeholder.com/400x300?text=G-004" alt="G-004">
+                        <div class="product-info">
+                            <span class="tag">NEW</span>
+                            <h3>授乳サポートチェア G-004</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reason section-padding bg-light fade-in">
             <div class="container">
                 <h2 class="section-title">選ばれる理由</h2>
                 <div class="grid grid-3">
                     <div class="card">
-                        <div class="card-icon">01</div>
                         <h3>国産メーカー/長年の実績</h3>
-                        <p>自社工場で木材から工程を一貫管理。長年の導入実績に基づく安心の品質を提供します。</p>
+                        <p>自社工場で木材から工程を一貫管理しています。長年の導入実績に基づく高品質な製品です。</p>
                     </div>
                     <div class="card">
-                        <div class="card-icon">02</div>
                         <h3>公共施設に特化した安全性</h3>
-                        <p>施設の運用に合わせ「長く使えること」「メンテナンス性」を重視した堅牢な設計です。</p>
+                        <p>施設の運用を考慮し「長く使えること」「メンテナンス性」を重視した設計です。</p>
                     </div>
                     <div class="card">
-                        <div class="card-icon">03</div>
-                        <h3>条件に合わせた最適な提案</h3>
-                        <p>入札業者様からのご相談も承ります。仕様書作成や納期調整など柔軟に対応可能です。</p>
+                        <h3>条件に合わせた最適なご案内</h3>
+                        <p>仕様書のご用意や概算見積りも可能です。お気軽にお申し付けください。</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="products section-padding bg-light">
-            <div class="container">
-                <h2 class="section-title">製品ラインナップ</h2>
-                <div class="grid grid-2">
-                    <div class="product-item">
-                        <img src="https://via.placeholder.com/400x300?text=G-006" alt="ハイタイプベッド">
-                        <div class="product-info">
-                            <span class="tag">NEW</span>
-                            <h3>ハイタイプベッド ハイクラウン G-006</h3>
-                            <p>立ち作業が楽なハイタイプ。自治体で最も選ばれる定番モデル。</p>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <img src="https://via.placeholder.com/400x300?text=G-008" alt="おむつ交換台">
-                        <div class="product-info">
-                            <h3>おむつ交換台 スタンドタイプ G-008</h3>
-                            <p>省スペースで設置可能。乳幼児サポートチェアとの併用もおすすめ。</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="flow section-padding">
+        <section class="flow section-padding fade-in">
             <div class="container">
                 <h2 class="section-title">導入までの流れ</h2>
                 <div class="flow-steps">
                     <div class="step"><span>1</span>お問い合わせ</div>
                     <div class="step"><span>2</span>ご提案・お見積り</div>
                     <div class="step"><span>3</span>ご発注</div>
-                    <div class="step"><span>4</span>納品・設置</div>
+                    <div class="step"><span>4</span>納品</div>
                 </div>
             </div>
         </section>
 
-        <section class="faq section-padding bg-light">
-            <div class="container">
-                <h2 class="section-title">よくある質問</h2>
-                <div class="faq-list">
-                    <div class="faq-item">
-                        <p class="q">Q. 入札業者からの依頼でも大丈夫ですか？</p>
-                        <p class="a">A. はい、承っております。仕様書の作成や概算見積りの算出もお気軽にお申し付けください。</p>
-                    </div>
-                    <div class="faq-item">
-                        <p class="q">Q. 保証や修理対応はどうなっていますか？</p>
-                        <p class="a">A. メーカー保証に加え、自社工場による修理サポート体制を整えております。</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="contact section-padding">
+        <section id="contact" class="contact section-padding bg-light fade-in">
             <div class="container form-container">
-                <h2 class="section-title">お見積り・お問い合わせ</h2>
-                <p class="form-intro">導入に関するご相談や、概算見積りの作成を承ります。下記フォームよりご連絡ください。</p>
+                <h2 class="section-title">お見積り/お問い合わせ Contact</h2>
                 <form class="form">
                     <div class="form-group">
                         <label>組織名</label>
-                        <input type="text" placeholder="例：〇〇市役所 / 株式会社〇〇">
+                        <input type="text" placeholder="例：〇〇役所 / 株式会社〇〇">
                     </div>
                     <div class="form-group">
                         <label>ご担当者様名</label>
@@ -144,14 +113,18 @@
                         <input type="email">
                     </div>
                     <div class="form-group">
-                        <label>お電話番号</label>
+                        <label>電話番号</label>
                         <input type="tel">
                     </div>
                     <div class="form-group">
-                        <label>お問い合わせ内容</label>
+                        <label>ご依頼内容</label>
+                        <input type="text">
+                    </div>
+                    <div class="form-group">
+                        <label>備考欄</label>
                         <textarea rows="5"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-block">送信する</button>
+                    <button type="submit" class="btn btn-primary btn-block">送信</button>
                 </form>
             </div>
         </section>
@@ -159,9 +132,21 @@
 
     <footer class="footer">
         <div class="container">
+            [span_2](start_span)<p>株式会社 山崎[span_2](end_span)</p>
             <p>&copy; YAMASAKI Co., Ltd. All Rights Reserved.</p>
         </div>
     </footer>
 
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.fade-in').forEach((el) => observer.observe(el));
+    </script>
 </body>
 </html>
