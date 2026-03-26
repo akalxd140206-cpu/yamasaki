@@ -5,50 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>自治体・公共施設向けLP | 株式会社ヤマサキ</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Zen+Maru+Gothic:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="bg-dots">
 
-    <header class="header">
-        <div class="container header-inner">
-            <h1 class="logo">YAMASAKI</h1>
-            <nav class="header-nav">
-                <span>ベビーベッド</span>
-                <span>ジュニアベッド</span>
-                <span class="active">おむつ交換台</span>
-                <span>公共施設向け</span>
+    <header class="site-header">
+        <div class="header-container">
+            <div class="header-left">
+                <div class="menu-trigger"><span></span><span></span><span></span><small>MENU</small></div>
+                <h1 class="logo">YAMASAKI</h1>
+            </div>
+            
+            <nav class="category-nav">
+                <span class="cat-btn baby">ベビーベッド</span>
+                <span class="cat-btn junior">ジュニアベッド</span>
+                <span class="cat-btn diaper">おむつ交換台</span>
+                <span class="cat-btn premium">最高級品</span>
+                <span class="cat-btn public active">産院向け</span>
             </nav>
-            <div class="header-icons">
-                <span class="icon">🔍</span>
-                <span class="icon">🛒</span>
+
+            <div class="header-right">
+                <div class="search-bar">
+                    <input type="text" placeholder="キーワード検索">
+                    <button>🔍</button>
+                </div>
+                <div class="header-tool">🛒<small>カート</small></div>
+                <div class="header-tool">🔓<small>ログイン</small></div>
             </div>
         </div>
     </header>
 
-    <main>
-        <section class="mv bg-dots">
-            <div class="container mv-grid">
-                <div class="mv-text">
-                    <p class="mv-sub">自治体・公共施設向け</p>
-                    <h2 class="mv-title">ベビーベッド/おむつ交換台の導入<br><span>お見積・仕様の確認・設置相談まで一括対応</span></h2>
-                    <p class="mv-description">国内自社生産のベビーベッドメーカーとして、素材選定から製造工程まで管理しています。製品ごとの仕様書ダウンロードや法人用カタログ、5年間の品質保証・修理対応など、導入後も見据えた情報とサポートをご提供します。</p>
-                    <a href="#" class="btn-more">業務用商品カテゴリーへ ＞</a>
+    <main class="container">
+        <nav class="breadcrumb">
+            <a href="#">株式会社ヤマサキ</a> ＞ 自治体・公共施設向けご案内
+        </nav>
+
+        <section class="mv-top-box">
+            <div class="mv-title-area">
+                <p>自治体・公共施設向け</p>
+                <h2>ベビーベッド／おむつ交換台の導入<br>お見積・仕様の確認・設置相談まで一括対応</h2>
+                <div class="mv-sub-text">
+                    子育て窓口、保健センター、児童館など、<br>
+                    施設に合わせて比較検討・入札準備に必要な情報をご提供します。<br>
+                    自治体担当者様・入札業者様から直接お問い合わせいただけます。
                 </div>
-                <div class="mv-image img-soft">画像</div>
             </div>
         </section>
 
+        <section class="mv-info-grid">
+            <div class="mv-description">
+                <p>国内自社生産のベビーベッドメーカーとして、素材選定から製造工程まで管理しています。<br>
+                製品ごとの仕様書ダウンロードや法人用カタログ、5年間の品質保証・修理対応など、導入後も見据えた情報とサポートをご提供します。</p>
+                <a href="#" class="btn-category">業務用商品カテゴリへ ＞</a>
+            </div>
+            <div class="mv-main-img img-soft">画像</div>
+        </section>
+
         <section class="cta-section">
-            <div class="container">
-                <div class="cta-container">
-                    <div class="cta-btns">
-                        <a href="#contact" class="btn btn-main">お見積・導入相談<br><small>(自治体・公共施設向け)</small></a>
-                        <a href="#contact" class="btn btn-sub">お問い合わせ</a>
-                    </div>
-                    <p class="cta-text">入力は約1分。未定の項目は「未定」で構いません。内容確認後、1営業日以内にご連絡します。</p>
+            <div class="cta-container">
+                <div class="cta-btns">
+                    <a href="#contact" class="btn btn-main">お見積・導入相談<br><small>(自治体・公共施設向け)</small></a>
+                    <a href="#contact" class="btn btn-sub">お問い合わせ</a>
                 </div>
+                <p class="cta-text">入力は約1分。未定の項目は「未定」で構いません。内容確認後、1営業日以内にご連絡します。</p>
             </div>
         </section>
+
 
         <section class="section section-padding">
             <div class="container">
