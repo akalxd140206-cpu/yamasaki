@@ -1,72 +1,74 @@
 /* ====================================
-   1. 全体設定とカラーパレット（柔らかい色）
+   デザインのテーマ設定（柔らかいトーン）
 ==================================== */
 :root {
-    --primary-color: #92b6d1; /* くすんだベビーブルー */
-    --accent-color: #f0e1cf;  /* 柔らかいクリームベージュ */
-    --text-color: #5c544d;    /* 優しいダークブラウン（真っ黒を避ける） */
-    --bg-white: #ffffff;
-    --radius-soft: 24px;      /* 大きめの角丸で柔らかさを出す */
+    --primary: #7ba3be;       [span_1](start_span)/* 産院向けボタンのブルー[span_1](end_span) */
+    --text: #5c544d;          [span_2](start_span)/* 優しいブラウン[span_2](end_span) */
+    --bg-light: #fffdfb;      [span_3](start_span)/* ほんのり温かい白[span_3](end_span) */
+    --radius-soft: 24px;      [span_4](start_span)/* 柔らかい印象の大きな角丸[span_4](end_span) */
 }
 
-* { margin: 0; padding: 0; box-sizing: border-box; }
 body { 
-    font-family: 'Zen Maru Gothic', 'Noto Sans JP', sans-serif; /* 丸みのあるフォント */
-    color: var(--text-color); 
-    line-height: 1.8; 
-    background-color: #fffdfb;
+    font-family: 'Zen Maru Gothic', sans-serif; 
+    color: var(--text); 
+    line-height: 1.6; 
+    margin: 0;
+    background-color: var(--bg-light);
 }
 
-.container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
-.section-padding { padding: 90px 0; }
-
-/* ====================================
-   2. 柔らかい背景パターン・装飾
-==================================== */
-/* ドット柄（水玉模様）の背景 */
+[span_5](start_span)/* 背景のドット模様[span_5](end_span) */
 .bg-dots {
-    background-color: #fff9f2;
-    background-image: radial-gradient(#efe4d8 2px, transparent 2px);
-    background-size: 24px 24px;
-}
-/* 薄いブルーの背景 */
-.bg-light-blue {
-    background-color: #f2f7fa;
+    background-image: radial-gradient(#efe4d8 1.5px, transparent 1.5px);
+    background-size: 30px 30px;
 }
 
-/* 画像に適用する柔らかい角丸 */
-.img-soft {
-    border-radius: var(--radius-soft);
-    background: #e6e3df;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #999;
-    box-shadow: 0 8px 24px rgba(146, 182, 209, 0.1);
-}
+.container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
 
 /* ====================================
-   3. ヘッダー
+   [span_6](start_span)ヘッダー（資料通りに再現）[span_6](end_span)
 ==================================== */
-.header { border-bottom: 1px solid #f0ebe6; padding: 15px 0; position: sticky; top: 0; background: var(--bg-white); z-index: 100; }
-.header-inner { display: flex; justify-content: space-between; align-items: center; }
-.logo { font-size: 1.2rem; font-weight: bold; letter-spacing: 2px; }
-.header-nav { display: flex; gap: 20px; }
-.header-nav span { font-size: 0.85rem; color: #a39c97; cursor: pointer; }
-.header-nav span.active { color: var(--primary-color); font-weight: bold; }
-.header-icons .icon { margin-left: 15px; color: #a39c97; }
+.site-header { background: #fff; padding: 10px 0; border-bottom: 1px solid #eee; position: sticky; top: 0; z-index: 100; }
+.header-container { display: flex; align-items: center; justify-content: space-between; }
+
+.header-left { display: flex; align-items: center; gap: 15px; }
+.menu-trigger { text-align: center; font-size: 0.6rem; cursor: pointer; }
+.menu-trigger span { display: block; width: 22px; height: 2px; background: #333; margin: 4px 0; }
+.logo { font-size: 1.4rem; letter-spacing: 3px; font-weight: bold; color: #333; }
+
+[span_7](start_span)/* カテゴリーボタンの色分け[span_7](end_span) */
+.category-nav { display: flex; gap: 4px; }
+.cat-btn { padding: 4px 10px; font-size: 0.7rem; border-radius: 4px; color: #fff; cursor: pointer; font-weight: bold; }
+.baby { background: #8bb97e; }
+.junior { background: #888; }
+.diaper { background: #d98d30; }
+.premium { background: #4d5363; }
+.public { background: var(--primary); }
+
+.header-right { display: flex; align-items: center; gap: 15px; }
+.search-bar { display: flex; border: 1px solid #ccc; border-radius: 4px; overflow: hidden; }
+.search-bar input { border: none; padding: 5px 8px; font-size: 0.8rem; width: 130px; outline: none; }
+.search-bar button { border: none; background: #444; color: #fff; padding: 5px 10px; cursor: pointer; }
+.header-tool { text-align: center; font-size: 0.6rem; color: #666; cursor: pointer; }
 
 /* ====================================
-   4. メインビジュアル
+   [span_8](start_span)メインビジュアル（資料通りに配置）[span_8](end_span)
 ==================================== */
-.mv { padding: 60px 0 100px; } /* 下に余裕を持たせる */
-.mv-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
-.mv-sub { color: var(--primary-color); font-weight: bold; font-size: 0.9rem; margin-bottom: 10px; }
-.mv-title { font-size: 1.8rem; margin-bottom: 20px; line-height: 1.5; color: #4a423d; }
-.mv-title span { font-size: 1.2rem; display: block; margin-top: 10px; }
-.mv-description { font-size: 0.95rem; margin-bottom: 30px; }
-.btn-more { display: inline-block; border: 2px solid #e8dfd5; padding: 10px 25px; text-decoration: none; color: var(--text-color); font-size: 0.85rem; border-radius: 50px; background: #fff; }
-.mv-image { height: 350px; }
+.breadcrumb { font-size: 0.75rem; color: #999; margin: 25px 0 15px; }
+.breadcrumb a { color: #999; text-decoration: none; border-bottom: 1px solid #ccc; }
+
+.mv-top-box { background: #f0f0f0; padding: 50px 40px; border-radius: 4px; position: relative; margin-bottom: 40px; }
+.mv-title-area h2 { font-size: 1.9rem; line-height: 1.4; margin: 15px 0; font-weight: 700; color: #444; }
+.mv-title-area p { font-size: 1rem; color: #666; }
+.mv-sub-text { position: absolute; bottom: 25px; right: 40px; text-align: right; font-size: 0.8rem; color: #777; line-height: 1.6; }
+
+.mv-info-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 50px; align-items: flex-start; margin-bottom: 60px; }
+.mv-description { font-size: 0.95rem; line-height: 1.9; }
+.btn-category { display: inline-block; margin-top: 25px; padding: 8px 25px; border: 1px solid #ccc; text-decoration: none; color: #666; font-size: 0.85rem; border-radius: 4px; transition: 0.3s; }
+.btn-category:hover { background: #f9f9f9; }
+
+[span_9](start_span)/* 画像エリアの柔らかい角丸[span_9](end_span) */
+.img-soft { border-radius: var(--radius-soft); background: #e6e3df; display: flex; align-items: center; justify-content: center; color: #999; box-shadow: 0 10px 30px rgba(0,0,0,0.03); }
+.mv-main-img { height: 380px; }
 
 /* ====================================
    5. CTA（ボタンのズレ修正）
