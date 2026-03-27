@@ -199,22 +199,43 @@ br.pc-br { display: inline; }
 .company-table th { width: 130px; font-weight: normal; color: #777; }
 
 /* --- お問い合わせフォーム --- */
-.form-card { background: #fff; padding: 60px; border-radius: var(--soft-radius); max-width: 850px; margin: 0 auto; border: 1px solid var(--border); box-shadow: 0 10px 30px rgba(0,0,0,0.02); }
-.form-group { display: flex; margin-bottom: 30px; align-items: flex-start; }
-.form-group label { width: 220px; font-weight: bold; font-size: 1rem; padding-top: 15px; flex-shrink: 0; }
-.form-group input, .form-group textarea, .form-group select { flex: 1; padding: 18px; border: 2px solid #eee; border-radius: 8px; font-family: in
-                                                             /* --- お問い合わせフォーム（途切れていた部分の修正） --- */
-.form-group input, .form-group textarea, .form-group select { 
+.form-card { 
+    background: #fff; 
+    padding: 60px; 
+    border-radius: var(--soft-radius); 
+    max-width: 850px; 
+    margin: 0 auto; 
+    border: 1px solid var(--border); 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.02); 
+}
+
+.form-group { 
+    display: flex; 
+    margin-bottom: 30px; 
+    align-items: flex-start; 
+}
+
+.form-group label { 
+    width: 220px; 
+    font-weight: bold; 
+    font-size: 1rem; 
+    padding-top: 15px; 
+    flex-shrink: 0; 
+}
+
+.form-group input, 
+.form-group textarea, 
+.form-group select { 
     flex: 1; 
     padding: 18px; 
     border: 2px solid #eee; 
     border-radius: 8px; 
-    font-family: inherit; /* ここが途切れていたので修正 */
+    font-family: inherit; 
 }
 
 /* --- 送信ボタンの中央寄せ --- */
 .form-submit {
     display: flex;
     justify-content: center;
-    margin-top: 40px; /* ボタンの上に少し余白を追加 */
+    margin-top: 40px; 
 }
