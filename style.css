@@ -203,3 +203,18 @@ br.pc-br { display: inline; }
 .form-group { display: flex; margin-bottom: 30px; align-items: flex-start; }
 .form-group label { width: 220px; font-weight: bold; font-size: 1rem; padding-top: 15px; flex-shrink: 0; }
 .form-group input, .form-group textarea, .form-group select { flex: 1; padding: 18px; border: 2px solid #eee; border-radius: 8px; font-family: in
+                                                             /* --- お問い合わせフォーム（途切れていた部分の修正） --- */
+.form-group input, .form-group textarea, .form-group select { 
+    flex: 1; 
+    padding: 18px; 
+    border: 2px solid #eee; 
+    border-radius: 8px; 
+    font-family: inherit; /* ここが途切れていたので修正 */
+}
+
+/* --- 送信ボタンの中央寄せ --- */
+.form-submit {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px; /* ボタンの上に少し余白を追加 */
+}
