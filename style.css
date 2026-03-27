@@ -106,6 +106,62 @@ br.pc-br { display: inline; }
 .btn-product-action .ja { font-weight: bold; font-size: 1.1rem; }
 .btn-product-action:hover { border-color: var(--primary); transform: translateY(-4px); box-shadow: 0 8px 20px rgba(0,0,0,0.05); }
 
+/* 製品カード内のレイアウト調整 */
+.product-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* 上下の要素を広げて配置 */
+    min-height: 100%; /* 高さを揃える */
+}
+
+/* 追加したスペック部分のスタイル */
+.product-spec {
+    margin: 10px 0 15px;
+    padding: 10px;
+    background: #fcfaf8; /* わずかに色をつけて区別 */
+    border-radius: 6px;
+}
+
+.product-spec ul {
+    list-style: none;
+    padding: 0;
+}
+
+.product-spec ul li {
+    font-size: 0.75rem; /* 小さめにしてスッキリさせる */
+    color: #666;
+    line-height: 1.6;
+    display: flex;
+    border-bottom: 1px dotted #e6e3df;
+    padding: 4px 0;
+}
+
+.product-spec ul li:last-child {
+    border-bottom: none;
+}
+
+.product-spec ul li span {
+    font-weight: bold;
+    color: var(--primary);
+    width: 50px; /* 見出しの幅を固定して揃える */
+    flex-shrink: 0;
+}
+
+/* 価格を少し目立たせる */
+.price {
+    margin-top: auto; /* カードの下部に固定 */
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+    text-align: right;
+}
+
+/* スマホ時の調整 */
+@media (max-width: 768px) {
+    .product-spec ul li {
+        font-size: 0.7rem; /* スマホではさらに一回り小さく */
+    }
+}
+
 /* --- 導入事例 --- */
 .case-card { display: flex; background: #fff; border-radius: var(--soft-radius); padding: 50px; gap: 60px; max-width: 950px; margin: 0 auto; border: 1px solid var(--border); align-items: stretch; }
 .case-img { width: 45%; }
